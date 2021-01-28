@@ -1,0 +1,53 @@
+/*si se tilda la pagina se actualiza con ctrl + shift + r sin cache*/
+html { background: linear-gradient(to bottom, #45484D 0%,  #000000 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1{
+    text-align: center;color: #ffffff;
+}
+.calculator{
+    width: 300px;
+    height: 475px;
+    background-color: #282927;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #000000; text-align: center;
+}
+.calculator_screen{
+    width: 90%;
+    height: 100px; 
+    font-size: 50px;padding: 0; border: 0; border-radius: 6px;
+    color: #ffffff; text-align: right; background: transparent; 
+}
+
+.calculator_keypad{
+    border-top: 1 solid #000000;
+}
+.btn{ 
+    background-color: #5d5d5d;
+    width: 75px;
+    height: 75px;
+    float: left; font-size: 30px; color: #ffffff; border: 0; font-weight: 300;
+    border-right: 1px solid #000000; border-bottom: 1px solid #000000;
+}
+
+.btn-double{
+    width: 150px;text-align: left; padding-left: 30px;
+}
+
+.btn-dark {
+    background-color: #3c3d3c;
+}
+.btn-orange {
+    background-color: #ff940e; /* mi solucion sin bordes en derecha*/  border-right: none;
+}
+/* otra solucion sin bordes en derecha */
+/*.btn:nth-child(4n),.btn:last-child
+{ border-right: 0;}*/
+.btn:focus {
+    outline: none; /*al pinchar sobre boton no salga azul*/
+}
+.btn:active{ opacity: 0.5;}

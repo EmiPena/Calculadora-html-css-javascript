@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Apple - Emiliano</title>
+    <!--declarar css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--declarar js pero deberia ir luego de todo al final del body-->
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="calculator">
+        <!--pantalla de numeros - disabled es para que solo se escriba con los numeros no en pantalla-->
+        <input class="calculator_screen" type="text" value="0" placeholder="" disabled />  
+        <div class="calculator_keypad">
+            <!--para que los botones dark sean de un color y los otros de otro-->
+            <button onclick="getContentClick(event)" class="btn btn-dark">AC</button>
+            <button onclick="getContentClick(event)" class="btn btn-dark">+/-</button>
+            <button onclick="getContentClick(event)" class="btn btn-dark">%</button>
+            <button onclick="getContentClick(event)" class="btn btn-orange">/</button>
+
+            <button onclick="getContentClick(event)" class="btn">7</button>
+            <button onclick="getContentClick(event)" class="btn">8</button>
+            <button onclick="getContentClick(event)" class="btn">9</button>
+            <button onclick="getContentClick(event)" class="btn btn-orange">X</button>
+            
+            <button onclick="getContentClick(event)" class="btn">4</button>
+            <button onclick="getContentClick(event)" class="btn">5</button>
+            <button onclick="getContentClick(event)" class="btn">6</button>
+            <button onclick="getContentClick(event)" class="btn btn-orange">-</button>
+            
+            <button onclick="getContentClick(event)" class="btn">1</button>
+            <button onclick="getContentClick(event)" class="btn">2</button>
+            <button onclick="getContentClick(event)" class="btn">3</button>
+            <button onclick="getContentClick(event)" class="btn btn-orange">+</button>
+            
+            <button onclick="getContentClick(event)" class="btn btn-double">0</button>
+            <button onclick="getContentClick(event)" class="btn">,</button>
+            <button onclick="getContentClick(event)" class="btn btn-orange">=</button>
+        </div>
+    </div>
+</body>
+</html>
